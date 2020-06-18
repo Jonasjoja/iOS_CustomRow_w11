@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v26-qi-kLc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gl8-Hz-Tdf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FighterListScreen" customModule="CustomCell_w11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ccO-Cs-t9l">
@@ -77,6 +77,39 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
         </scene>
+        <!--Facebook Login View Controller-->
+        <scene sceneID="V6s-8L-lCd">
+            <objects>
+                <viewController id="gl8-Hz-Tdf" customClass="FacebookLoginViewController" customModule="CustomCell_w11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vhc-ia-HVk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whz-bt-gaR">
+                                <rect key="frame" x="164" y="93" width="87.5" height="22"/>
+                                <state key="normal" title="Go to list" image="arrow.up.left" catalog="system">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="q2p-hp-TYq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="whz-bt-gaR" firstAttribute="leading" secondItem="917-S1-fXf" secondAttribute="leading" constant="164" id="sTw-9W-cO5"/>
+                            <constraint firstItem="whz-bt-gaR" firstAttribute="top" secondItem="vhc-ia-HVk" secondAttribute="topMargin" constant="49" id="tWQ-W5-ugn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="917-S1-fXf"/>
+                    </view>
+                    <connections>
+                        <outlet property="goToListButton" destination="whz-bt-gaR" id="Ha8-Xh-t5B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laB-wm-xi0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1995.6521739130437" y="95.758928571428569"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="KMb-L7-gbI">
             <objects>
@@ -96,4 +129,10 @@
             <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="q2p-hp-TYq"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="arrow.up.left" catalog="system" width="128" height="111"/>
+    </resources>
 </document>

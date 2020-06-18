@@ -70,6 +70,7 @@ extension FighterListScreen : UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //do something when row selected
         print(indexPath)
     }
 }

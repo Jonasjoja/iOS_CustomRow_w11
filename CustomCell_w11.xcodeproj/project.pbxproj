@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844F35D1249B9E24005001CC /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F35D0249B9E24005001CC /* FacebookLoginViewController.swift */; };
 		846460BE249783430072ECE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846460BD249783430072ECE6 /* AppDelegate.swift */; };
 		846460C0249783440072ECE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846460BF249783440072ECE6 /* SceneDelegate.swift */; };
 		846460C5249783440072ECE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846460C3249783440072ECE6 /* Main.storyboard */; };
@@ -15,9 +16,14 @@
 		846460D2249783650072ECE6 /* FighterListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846460D1249783650072ECE6 /* FighterListScreen.swift */; };
 		846460D4249786CB0072ECE6 /* FighterCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846460D3249786CB0072ECE6 /* FighterCellTableViewCell.swift */; };
 		846460D62497885D0072ECE6 /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846460D52497885D0072ECE6 /* Fighter.swift */; };
+		FAA4780B47E7E33D4774F139 /* Pods_CustomCell_w11.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A88FB36E51812F32205338 /* Pods_CustomCell_w11.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DA3609C3B5080E8B77E2B85 /* Pods-CustomCell_w11.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomCell_w11.debug.xcconfig"; path = "Target Support Files/Pods-CustomCell_w11/Pods-CustomCell_w11.debug.xcconfig"; sourceTree = "<group>"; };
+		59A88FB36E51812F32205338 /* Pods_CustomCell_w11.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomCell_w11.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7697AB38374753A5D2297320 /* Pods-CustomCell_w11.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomCell_w11.release.xcconfig"; path = "Target Support Files/Pods-CustomCell_w11/Pods-CustomCell_w11.release.xcconfig"; sourceTree = "<group>"; };
+		844F35D0249B9E24005001CC /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
 		846460BA249783430072ECE6 /* CustomCell_w11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCell_w11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846460BD249783430072ECE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846460BF249783440072ECE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA4780B47E7E33D4774F139 /* Pods_CustomCell_w11.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		089079CA154794313C79076A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DA3609C3B5080E8B77E2B85 /* Pods-CustomCell_w11.debug.xcconfig */,
+				7697AB38374753A5D2297320 /* Pods-CustomCell_w11.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		846460B1249783430072ECE6 = {
 			isa = PBXGroup;
 			children = (
 				846460BC249783430072ECE6 /* CustomCell_w11 */,
 				846460BB249783430072ECE6 /* Products */,
+				089079CA154794313C79076A /* Pods */,
+				E051ACAE5B527D99894E4361 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +78,7 @@
 		846460BC249783430072ECE6 /* CustomCell_w11 */ = {
 			isa = PBXGroup;
 			children = (
+				844F35D0249B9E24005001CC /* FacebookLoginViewController.swift */,
 				846460BD249783430072ECE6 /* AppDelegate.swift */,
 				846460BF249783440072ECE6 /* SceneDelegate.swift */,
 				846460D1249783650072ECE6 /* FighterListScreen.swift */,
@@ -73,6 +92,14 @@
 			path = CustomCell_w11;
 			sourceTree = "<group>";
 		};
+		E051ACAE5B527D99894E4361 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59A88FB36E51812F32205338 /* Pods_CustomCell_w11.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 846460CE249783450072ECE6 /* Build configuration list for PBXNativeTarget "CustomCell_w11" */;
 			buildPhases = (
+				919DA3D0594164423B159DDA /* [CP] Check Pods Manifest.lock */,
 				846460B6249783430072ECE6 /* Sources */,
 				846460B7249783430072ECE6 /* Frameworks */,
 				846460B8249783430072ECE6 /* Resources */,
+				C7184974ADE0292E2768CF13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +168,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		919DA3D0594164423B159DDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomCell_w11-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7184974ADE0292E2768CF13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomCell_w11/Pods-CustomCell_w11-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomCell_w11/Pods-CustomCell_w11-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomCell_w11/Pods-CustomCell_w11-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		846460B6249783430072ECE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -146,6 +217,7 @@
 			files = (
 				846460D62497885D0072ECE6 /* Fighter.swift in Sources */,
 				846460D4249786CB0072ECE6 /* FighterCellTableViewCell.swift in Sources */,
+				844F35D1249B9E24005001CC /* FacebookLoginViewController.swift in Sources */,
 				846460BE249783430072ECE6 /* AppDelegate.swift in Sources */,
 				846460C0249783440072ECE6 /* SceneDelegate.swift in Sources */,
 				846460D2249783650072ECE6 /* FighterListScreen.swift in Sources */,
@@ -290,6 +362,7 @@
 		};
 		846460CF249783450072ECE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DA3609C3B5080E8B77E2B85 /* Pods-CustomCell_w11.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +382,7 @@
 		};
 		846460D0249783450072ECE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7697AB38374753A5D2297320 /* Pods-CustomCell_w11.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
